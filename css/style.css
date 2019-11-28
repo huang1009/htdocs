@@ -1,0 +1,49 @@
+body {
+    height: 100%;
+    background-color: #fff6E3;
+}
+
+#span-bg {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.loginout {
+    font-size: 0.8em;
+}
+
+.my-container {
+    width: 100%;
+    height: auto;
+    padding-right: auto;
+    padding-left: auto;
+    margin-right: auto;
+    margin-left: auto
+}
+
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+
+.ex {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+
+.nav-item a {
+    color: crimson;
+}
+
+.hid {
+    display: none;
+}
