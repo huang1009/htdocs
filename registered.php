@@ -5,11 +5,17 @@ require_once("conn/logInOut.php");
 <!DOCTYPE html>
 
 <head>
-    <meta charset="utf-8">
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Banece蓓妮司</title>
+    <link rel="icon" href="img/Banece.ico" type="image/x-icon">
+    <meta name="description" content="網頁簡短描述">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- <link rel="stylesheet" href="css/animate.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -52,6 +58,7 @@ require_once("conn/logInOut.php");
                                                         echo $name . ',您好!<a href="?logout=true">登出</a>';
                                                     } else { ?>訪客,您好!<a href="member.php">登入</a><?php } ?></div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -71,7 +78,7 @@ require_once("conn/logInOut.php");
                     <div class="w-100 m-auto">
                         <br>
                         <div class="form-group row ">
-                            <div class="m-auto w-50">
+                            <div class="m-auto col-10 col-sm-7 col-md-7 col-lg-7 col-xl-7 pt-10">
                                 <label for="accounts" class="col-sm-4 col-form-label  float-left">帳號：</label>
                                 <div class="col-sm-8 float-left">
                                     <input type="text" class="form-control" name="accounts"  id="accounts" placeholder=" "  required>
@@ -79,7 +86,7 @@ require_once("conn/logInOut.php");
                             </div>
                         </div>
                         <div class="form-group row">
-                            <div class="m-auto w-50">
+                        <div class="m-auto col-10 col-sm-7 col-md-7 col-lg-7 col-xl-7 pt-10">
                                 <label for="password" class="col-sm-4 col-form-label float-left">密碼：</label>
                                 <div class="col-sm-8 float-left">
                                     <input type="text" class="form-control" name="password" id="password" placeholder=" " required>
@@ -88,7 +95,7 @@ require_once("conn/logInOut.php");
                         </div>
 
                         <div class="form-group row">
-                            <div class="m-auto w-50">
+                        <div class="m-auto col-10 col-sm-7 col-md-7 col-lg-7 col-xl-7 pt-10">
                                 <label for="name" class="col-sm-4 col-form-label float-left">姓名：</label>
                                 <div class="col-sm-8 float-left">
                                     <input type="text" class="form-control" name="name" id="name" placeholder=" " required>
@@ -97,7 +104,7 @@ require_once("conn/logInOut.php");
                         </div>
 
                         <div class="form-group row">
-                            <div class="m-auto w-50">
+                        <div class="m-auto col-10 col-sm-7 col-md-7 col-lg-7 col-xl-7 pt-10">
                                 <label for="birthday" class="col-sm-4 col-form-label float-left">生日：</label>
                                 <div class="col-sm-8 float-left">
                                     <input type="date" class="form-control" name="birthday" id="birthday" placeholder=" " required>
@@ -106,7 +113,7 @@ require_once("conn/logInOut.php");
                         </div>
 
                         <div class="form-group row">
-                            <div class="m-auto w-50">
+                        <div class="m-auto col-10 col-sm-7 col-md-7 col-lg-7 col-xl-7 pt-10">
                                 <label for="phone" class="col-sm-4 col-form-label float-left">電話：</label>
                                 <div class="col-sm-8 float-left">
                                     <input type="text" class="form-control " name="phone" id="phone " placeholder=" " required>
@@ -115,7 +122,7 @@ require_once("conn/logInOut.php");
                         </div>
 
                         <div class="form-group row">
-                            <div class="m-auto w-50">
+                        <div class="m-auto col-10 col-sm-7 col-md-7 col-lg-7 col-xl-7 pt-10">
                                 <label for="email" class="col-sm-4 col-form-label float-left">電子信箱：</label>
                                 <div class="col-sm-8 float-left">
                                     <input type="email" class="form-control" name="email" id="email" placeholder=" " required>
@@ -124,7 +131,7 @@ require_once("conn/logInOut.php");
                         </div>
 
                         <div class="form-group row">
-                            <div class="m-auto w-50">
+                        <div class="m-auto col-10 col-sm-7 col-md-7 col-lg-7 col-xl-7 pt-10">
                                 <label for="address" class="col-sm-4 col-form-label float-left">地址：</label>
                                 <div class="col-sm-8 float-left">
                                     <input type="text" class="form-control" name="address" id="address" placeholder=" " required>
@@ -173,7 +180,7 @@ require_once("conn/logInOut.php");
                             </textarea>
                             <label class="mt-3 mb-3" for="Terms">當您點選送出按鈕後，表示您同意以上服務條款。</label>
                     </div>
-                    <div class="col-2 m-auto">
+                    <div class="m-auto col-4 col-sm-2 col-md-2 col-lg-2 col-xl-2 pt-10">
                         <input name="action" type="hidden" value="addaccounts">
                         <button type="submit" class="btn btn-outline-primary btn-block">送出</button>
                     </div>
